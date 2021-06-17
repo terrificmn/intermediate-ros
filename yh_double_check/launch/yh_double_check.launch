@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="yh_double_check" type="yh_check_pub1" name="yh_check_pub1" />
+    <node pkg="yh_double_check" type="yh_check_pub2" name="yh_check_pub2" />
+    <node pkg="yh_double_check" type="yh_check_sub" name="yh_check_sub" output="screen" />
+
+    <!-- output="screen" 옵션을 넣어주면 그 해당 노드에서는 터미널에서 출력이 된다 -->
+</launch>
