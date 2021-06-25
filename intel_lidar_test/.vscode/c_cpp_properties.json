@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ubun/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/ubun/catkin_ws/src/intel_lidar_test/include/**",
+        "/home/ubun/catkin_ws/src/lidar_turtle_go/include/**",
+        "/home/ubun/catkin_ws/src/object_detection_gl_ros-area_release/include/**",
+        "/home/ubun/catkin_ws/src/yh_turtle_keyboard/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
