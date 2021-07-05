@@ -1,6 +1,3 @@
-/// 다른 패키지의 msg 를 가져오는 예제 
-/// publisher와 subscriber 를 동시에 활용
-
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
 #include <turtlesim/TeleportAbsolute.h>
@@ -73,27 +70,8 @@ void msgCallback(const geometry_msgs::Twist::ConstPtr &msg) {
 }
 
 int main (int argc, char** argv) {
-    ros::init(argc, argv, "turtle_keyboard_pen");
+    ros::init(argc, argv, "turtle_keyboard_pen_v1");
     ros::NodeHandle nh;
-
-//    ros::ServiceClient srvClient = nh.serviceClient<turtlesim::TeleportAbsolute>("/turtle1/teleport_absolute");
-    
-    // cout << "삼각형 한 변의 길이를 입력하세요: ";
-    // cin >> inputLength;
-    
-    // // TeleportAbsolute 서비스 서버 이용해서 중심 요청
-    // turtlesim::TeleportAbsolute srv;
-    // srv.request.x = 5.544445;
-    // srv.request.y = 5.544445;
-    // srv.request.theta = 0.000000;
-
-    // // 사용자 입력이 크면 위치 변경 요청
-    // if (inputLength > 5) {
-    //     srv.request.x = 5.544445 - (inputLength/2);
-    //     srv.request.y = 5.544445 - (inputLength/2);
-    // }
-
-    // srvClient.call(srv);
 
     srvPenClient = nh.serviceClient<turtlesim::SetPen>("/turtle1/set_pen");
 

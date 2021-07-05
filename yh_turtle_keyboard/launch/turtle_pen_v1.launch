@@ -7,7 +7,7 @@
         <param name="background_b" type="int" value="255 "/>
     </node>
     <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" />
-    <node pkg="yh_turtle_keyboard" type="yh_turtle_pen" name="yh_turtle_pen" output="screen"/>
+    <node pkg="yh_turtle_keyboard" type="yh_turtle_pen_v1" name="yh_turtle_pen_v1" output="screen"/>
     
 <!-- ROS에는 파라미터 서버가 있다
 turtlesim 노드를 예로 들면 터틀심 배경 화면이 파라미터에 서버에 저장이 되어 있다
@@ -19,6 +19,4 @@ rosparam 이라는 명령어가 있는데 launch파일을 이용해서 쉽게 �
 -->
 
 <!---->
-
-
 </launch>
