@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="double_check" type="check_pub1" name="check_pub1" output="screen"/>
+    <node pkg="double_check" type="check_pub2" name="check_pub2" output="screen" />
+    <node pkg="double_check" type="check_sub" name="check_sub" output="screen" />
+
+    <!-- output="screen" 옵션을 넣어주면 그 해당 노드에서는 터미널에서 출력이 된다 -->
+</launch>

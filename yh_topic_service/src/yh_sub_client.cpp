@@ -1,6 +1,6 @@
 #include "ros/ros.h"
 #include "yh_topic_service/pubNumber.h" // 패키지 이름/메세지파일이름.h 
-#include "yh_topic_service/addNumber.h"
+#include "yh_topic_service/addNumber.h" // 서비스 메시지
 
 #include <iostream>
 

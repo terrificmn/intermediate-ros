@@ -1,0 +1,22 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1">
+     <!-- 터틀심 배경 바꾸기 background_r,g,b 로 바꾸고 type은 미리 정해진 형식으로 int
+     value는 0~255 사이로 넣어준다 -->
+        <param name="background_r" type="int" value="255" />
+        <param name="background_g" type="int" value="255" />
+        <param name="background_b" type="int" value="255 "/>
+    </node>
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" />
+    <node pkg="various_turtle_movement" type="turtle_pen_v2" name="turtle_pen_v2" output="screen"/>
+    
+<!-- ROS에는 파라미터 서버가 있다
+turtlesim 노드를 예로 들면 터틀심 배경 화면이 파라미터에 서버에 저장이 되어 있다
+
+rosparam 이라는 명령어가 있는데 launch파일을 이용해서 쉽게 할 수 있음 
+
+파라미터 서버를 바꿔주면 배경 화면을 바꿔줄 수 있는데
+먼저 luanch 파일에서 쉽게 바꿔줄 수 있음
+-->
+
+<!---->
+</launch>

@@ -1,6 +1,6 @@
 #include "ros/ros.h" //ROS 기본 헤더파일 추가하기 - 기본 함수들을 사용하기 위해서
 #include "yh_topic_service/pubNumber.h" // 패키지 이름/메세지파일이름.h 
-#include "yh_topic_service/addNumber.h"
+#include "yh_topic_service/addNumber.h" // 서비스 메시지
 #include <iostream>
 
 bool calculationCallback(yh_topic_service::addNumber::Request &req, yh_topic_service::addNumber::Response &res) {
